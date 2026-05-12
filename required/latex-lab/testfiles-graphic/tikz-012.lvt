@@ -1,0 +1,15 @@
+\DocumentMetadata{
+ tagging=on
+}
+\input{regression-test}
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\START
+\TEST{012 A: inner sep key}{%
+  \begin{tikzpicture}[inner sep=20.1pt]%
+    \node[draw]{blub};
+  \end{tikzpicture}%
+}
+\SHOWPDFTAGS
+\end{document}
